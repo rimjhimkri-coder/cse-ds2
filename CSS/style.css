@@ -1,0 +1,28 @@
+h1{
+    color: cadetblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(138, 124, 16);
+    font-style: italic;
+    text-align: justify;
+    text-decoration: underline;
+    text-transform: lowercase;
+    text-shadow: 0px 0px 10px rgb(225, 255, 0);
+    color:red
+}
+p{
+    color:black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(16, 109, 138);
+    font-style: italic;
+    text-align: justify;
+    text-decoration: underline;
+    text-transform: lowercase;
+    text-shadow: 0px 0px 10px rgb(255, 0, 183);
+    color: black;
+
+}
+img{
+    height:300px;
+    width:300px;
+    border:5px solid rgb(0, 255, 13) ;
+}
