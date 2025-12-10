@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase Navbar</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      background: #111;
+      color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    /* LOGO */
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* NAV LINKS */
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      padding: 6px 10px;
+    }
+
+    .nav-links a:hover {
+      background: #333;
+      border-radius: 5px;
+    }
+
+    /* SEARCH BAR */
+    .search-box input {
+      padding: 6px;
+      border-radius: 4px;
+      border: none;
+    }
+
+    /* CART BADGE */
+    .cart-badge {
+      background: red;
+      color: white;
+      padding: 2px 6px;
+      font-size: 12px;
+      border-radius: 10px;
+      margin-left: 5px;
+    }
+
+    /* HAMBURGER */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background: white;
+    }
+
+    /* MOBILE VIEW */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #111;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+      }
+
+      .search-box {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">ShopEase</div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search products...">
+    </div>
+
+    <div class="nav-links" id="menuLinks">
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Categories</a>
+      <a href="#">Deals</a>
+      <a href="#">Contact</a>
+      <a href="#">Cart <span class="cart-badge">2</span></a>
+      <a href="#"><b>Login</b></a>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      let menu = document.getElementById("menuLinks");
+      menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+    }
+  </script>
+
+</body>
+</html>

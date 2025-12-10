@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .product p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .price {
+            margin: 10px 0;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="margin-bottom:20px;">Responsive Product Grid</h2>
+
+    <div class="container">
+
+        <div class="product">
+            <img src="dot and key.webp" alt="Product">
+            <h3>Dot and key</h3>
+            <div class="price">₹499</div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="product">
+            <img src="bunny.webp" alt="Product">
+            <h3>Bunny</h3>
+            <div class="price">₹799</div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="product">
+            <img src="bat image.jpg" alt="Product">
+            <h3>Cricket bat</h3>
+            <div class="price">₹999</div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="product">
+            <img src="saree2.webp" alt="Product">
+            <h3>Silk saree</h3>
+            <div class="price">₹1299</div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
